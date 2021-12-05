@@ -1,0 +1,10 @@
+version: '3.7'
+
+services:
+  guestbook:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: ${DOCKER_REGISTRY}/tinybeans/guestbook:${TAG:-stage}
+    ports:
+      - "80:80"
