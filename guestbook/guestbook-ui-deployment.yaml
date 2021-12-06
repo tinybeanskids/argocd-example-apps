@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       #- image: gcr.io/heptio-images/ks-guestbook-demo:0.2
-      - image: 375215620020.dkr.ecr.us-west-2.amazonaws.com/tinybeans/guestbook:stage
+      - image: 375215620020.dkr.ecr.us-west-2.amazonaws.com/tinybeans/guestbook:v0.1
         name: guestbook-ui
         ports:
         - containerPort: 80
